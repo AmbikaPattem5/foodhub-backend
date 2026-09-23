@@ -352,6 +352,16 @@ export const initialCoupons = [
 
 export const initialUsers = [
   {
+    id: "user-admin",
+    name: "admin",
+    email: "admin@foodhub.com",
+    phone: "9876543210",
+    password: "admin",
+    role: "admin",
+    terms: true,
+    createdAt: new Date().toISOString(),
+  },
+  {
     id: "user-1",
     name: "Demo User",
     email: "demo@foodhub.com",
@@ -362,12 +372,12 @@ export const initialUsers = [
   },
 ];
 
-export const initialFavorites = [1, 2];
+export const initialFavorites = [1, 2, 3, 6];
 
 export const initialOrders = [
   {
-    id: "demo-order-101",
-    user: "Demo User",
+    id: "ORD-7821-DEL",
+    user: "admin",
     items: [
       {
         id: 101,
@@ -384,9 +394,81 @@ export const initialOrders = [
         quantity: 1,
       },
     ],
-    address: "123 Food Street, Tech Park, PIN: 560001 (Ph: 9876543210)",
-    totalAmount: 790,
+    address: "Flat 402, Green Glen Layout, Bellandur, Bengaluru, PIN: 560103 (Ph: 9876543210)",
+    totalAmount: 750,
     status: "Delivered",
-    createdAt: String(Date.now() - 86400000), // 1 day ago
+    createdAt: "1790100000000",
+  },
+  {
+    id: "ORD-8432-OUT",
+    user: "admin",
+    items: [
+      {
+        id: 301,
+        restaurantId: 3,
+        name: "Margherita Pizza",
+        price: 249,
+        quantity: 2,
+      },
+      {
+        id: 303,
+        restaurantId: 3,
+        name: "Garlic Bread",
+        price: 149,
+        quantity: 1,
+      },
+    ],
+    address: "Flat 402, Green Glen Layout, Bellandur, Bengaluru, PIN: 560103 (Ph: 9876543210)",
+    totalAmount: 647,
+    status: "OutForDelivery",
+    createdAt: "1790185000000",
+  },
+  {
+    id: "ORD-9154-PREP",
+    user: "admin",
+    items: [
+      {
+        id: 201,
+        restaurantId: 2,
+        name: "Meghana Special Chicken Biryani",
+        price: 300,
+        quantity: 2,
+      },
+      {
+        id: 203,
+        restaurantId: 2,
+        name: "Paneer Tikka",
+        price: 180,
+        quantity: 1,
+      },
+    ],
+    address: "Prestige Tech Park, Marathahalli, Bengaluru, PIN: 560103 (Ph: 9876543210)",
+    totalAmount: 780,
+    status: "Preparing",
+    createdAt: "1790192000000",
+  },
+  {
+    id: "ORD-9921-PLC",
+    user: "admin",
+    items: [
+      {
+        id: 601,
+        restaurantId: 6,
+        name: "Masala Dosa",
+        price: 120,
+        quantity: 2,
+      },
+      {
+        id: 602,
+        restaurantId: 6,
+        name: "Idli Vada",
+        price: 100,
+        quantity: 2,
+      },
+    ],
+    address: "Flat 402, Green Glen Layout, Bellandur, Bengaluru, PIN: 560103 (Ph: 9876543210)",
+    totalAmount: 440,
+    status: "Placed",
+    createdAt: "1790196000000",
   },
 ];
