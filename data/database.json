@@ -358,47 +358,29 @@
   ],
   "users": [
     {
-      "id": "7613cd5a-c905-4ca0-b0ba-6aaa95653d6c",
-      "name": "veronika",
-      "email": "veronika@gmail.com",
-      "phone": "9078654356",
-      "password": "123456",
+      "id": "user-admin",
+      "name": "admin",
+      "email": "admin@foodhub.com",
+      "phone": "9876543210",
+      "password": "admin",
+      "role": "admin",
       "terms": true,
-      "createdAt": "2026-09-23T06:49:41.178Z"
-    },
-    {
-      "id": "de703e54-57fc-46b3-babd-2e1b5977b0af",
-      "name": "prasada",
-      "email": "prasad@gmail.com",
-      "phone": "1298746736",
-      "password": "123456",
-      "terms": true,
-      "createdAt": "2026-09-23T06:53:50.538Z"
+      "createdAt": "2026-09-24T00:50:00.000Z"
     }
   ],
-  "favorites": [],
+  "favorites": [1, 2, 3, 6],
   "orders": [
     {
-      "id": "127ad478-0b75-4061-a240-3e43e14a566d",
-      "user": "kjhjk",
+      "id": "ORD-7821-DEL",
+      "user": "admin",
       "items": [
         {
-          "id": 203,
-          "restaurantId": 2,
-          "name": "Paneer Tikka",
-          "price": 180,
+          "id": 101,
+          "restaurantId": 1,
+          "name": "Chicken Biryani",
+          "price": 280,
           "quantity": 2
-        }
-      ],
-      "address": "karnataka, karta, PIN: 787877 (Ph: 9090990900)",
-      "totalAmount": 400,
-      "status": "Preparing",
-      "createdAt": "1790166052182"
-    },
-    {
-      "id": "921e1224-93bf-4c4f-9123-99fe31f18906",
-      "user": "pattem Ambika",
-      "items": [
+        },
         {
           "id": 104,
           "restaurantId": 1,
@@ -407,27 +389,82 @@
           "quantity": 1
         }
       ],
-      "address": ",mm, bang, PIN: 876868 (Ph: 9078654356)",
-      "totalAmount": 230,
-      "status": "Placed",
-      "createdAt": "1790169454923"
+      "address": "Flat 402, Green Glen Layout, Bellandur, Bengaluru, PIN: 560103 (Ph: 9876543210)",
+      "totalAmount": 750,
+      "status": "Delivered",
+      "createdAt": "1790100000000"
     },
     {
-      "id": "eccc5d2a-b8d2-471d-bfb0-05639dc2bf60",
-      "user": "pattem Ambika",
+      "id": "ORD-8432-OUT",
+      "user": "admin",
       "items": [
+        {
+          "id": 301,
+          "restaurantId": 3,
+          "name": "Margherita Pizza",
+          "price": 249,
+          "quantity": 2
+        },
+        {
+          "id": 303,
+          "restaurantId": 3,
+          "name": "Garlic Bread",
+          "price": 149,
+          "quantity": 1
+        }
+      ],
+      "address": "Flat 402, Green Glen Layout, Bellandur, Bengaluru, PIN: 560103 (Ph: 9876543210)",
+      "totalAmount": 647,
+      "status": "OutForDelivery",
+      "createdAt": "1790185000000"
+    },
+    {
+      "id": "ORD-9154-PREP",
+      "user": "admin",
+      "items": [
+        {
+          "id": 201,
+          "restaurantId": 2,
+          "name": "Meghana Special Chicken Biryani",
+          "price": 300,
+          "quantity": 2
+        },
+        {
+          "id": 203,
+          "restaurantId": 2,
+          "name": "Paneer Tikka",
+          "price": 180,
+          "quantity": 1
+        }
+      ],
+      "address": "Prestige Tech Park, Marathahalli, Bengaluru, PIN: 560103 (Ph: 9876543210)",
+      "totalAmount": 780,
+      "status": "Preparing",
+      "createdAt": "1790192000000"
+    },
+    {
+      "id": "ORD-9921-PLC",
+      "user": "admin",
+      "items": [
+        {
+          "id": 601,
+          "restaurantId": 6,
+          "name": "Masala Dosa",
+          "price": 120,
+          "quantity": 2
+        },
         {
           "id": 602,
           "restaurantId": 6,
           "name": "Idli Vada",
           "price": 100,
-          "quantity": 1
+          "quantity": 2
         }
       ],
-      "address": "jgfhf, bangalore, PIN: 876868 (Ph: 9034234567)",
-      "totalAmount": 140,
+      "address": "Flat 402, Green Glen Layout, Bellandur, Bengaluru, PIN: 560103 (Ph: 9876543210)",
+      "totalAmount": 440,
       "status": "Placed",
-      "createdAt": "1790169717934"
+      "createdAt": "1790196000000"
     }
   ]
 }
